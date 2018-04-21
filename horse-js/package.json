@@ -1,0 +1,42 @@
+{
+  "name": "horse-js",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "history": "*",
+    "immutable": "*",
+    "prop-types": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-redux": "*",
+    "react-router-dom": "*",
+    "react-router-redux": "*",
+    "redux": "*",
+    "redux-saga": "*",
+    "webpack": "3.10"
+  },
+  "devDependencies": {
+    "eslint": "*",
+    "eslint-config-airbnb": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-jsx-a11y": "*",
+    "eslint-plugin-react": "*",
+    "lint-staged": "*",
+    "pre-commit": "*",
+    "react-scripts": "*"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint": "npm run lint:js",
+    "lint:staged": "lint-staged",
+    "lint:js": "eslint --ext .js src/"
+  },
+  "pre-commit": "lint:staged",
+  "lint-staged": {
+    "*.js": "lint:js"
+  },
+  "proxy": "https://httpbin.org"
+}
