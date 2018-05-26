@@ -1,0 +1,63 @@
+{
+    "extends": [
+        "airbnb",
+        "plugin:prettier/recommended",
+        "prettier/react",
+        "react-app"
+    ],
+    "rules": {
+        "no-debugger": 0,
+        "no-console": 0,
+        "import/prefer-default-export": 0,
+        "import": 0,
+        "func-names": 0,
+        "no-unused-vars": [
+            1,
+            {
+                "argsIgnorePattern": "res|next|^err"
+            }
+        ],
+        "no-underscore-dangle": 0,
+        "comma-dangle": 0,
+        "no-param-reassign": [
+            2,
+            {
+                "props": false
+            }
+        ],
+        "react/forbid-prop-types": 0,
+        "react/prop-types": 0,
+        "react/require-default-props": 0,
+        "react/no-array-index-key": 0,
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [".js", ".jsx"]
+            }
+        ],
+        "quotes": [
+            2,
+            "single",
+            {
+                "avoidEscape": true,
+                "allowTemplateLiterals": true
+            }
+        ],
+        "prettier/prettier": [
+            "error",
+            {
+                "trailingComma": "es5",
+                "singleQuote": true,
+                "printWidth": 120,
+                "tabWidth": 4
+            }
+        ],
+        "jsx-a11y/href-no-hash": "off",
+        "jsx-a11y/anchor-is-valid": [
+            "warn",
+            {
+                "aspects": ["invalidHref"]
+            }
+        ]
+    }
+}
